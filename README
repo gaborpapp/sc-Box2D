@@ -2,4 +2,4 @@ sc-Box2D is a simple wrapper for the Box2D physics engine intended for use with 
 
 Included are a Sandbox that simplifies the creation of a physics world and its boundaries, and some conversion methods for moving between screen and physics coordinates (and cinder and box2d data structures).
 
-include/Box2D contains the source of Box2D_v2.1.2 by Erin Catto. More information on Box2D is contained in that directory.
+Box2D contains the source of Box2D_v2.2.1 by Erin Catto. More information on Box2D is contained in that directory.

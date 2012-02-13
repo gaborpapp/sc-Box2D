@@ -1,0 +1,15 @@
+BOX2DPATH = '../../../scons/'
+
+import sys
+sys.path.append(BOX2DPATH)
+import box2d
+SOURCES = box2d.getSources(BOX2DPATH)
+INCLUDES = box2d.getIncludes(BOX2DPATH)
+
+TARGET = 'Joint2DApp'
+SOURCES += ['Joint2DApp.cpp']
+DEBUG = 0
+
+SConscript('../../../../../scons/SConscript',
+	exports = ['TARGET', 'SOURCES', 'INCLUDES', 'DEBUG'])
+
