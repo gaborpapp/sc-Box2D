@@ -48,6 +48,7 @@ def getSources(relpath):
 
 	_B2CINDER_SRC = ['BoundaryElement.cpp', \
 		'BoxElement.cpp', \
+		'TexturedElement.cpp', \
 		'Conversions.cpp', \
 		'PhysicsElement.cpp', \
 		'Sandbox.cpp']
