@@ -1,15 +1,10 @@
-BOX2DPATH = '../../../scons/'
+env = Environment()
 
-import sys
-sys.path.append(BOX2DPATH)
-import Box2D
-SOURCES = Box2D.getSources(BOX2DPATH)
-INCLUDES = Box2D.getIncludes(BOX2DPATH)
+env['APP_TARGET'] = 'BasicBox2DApp'
+env['APP_SOURCES'] = ['BasicBox2DApp.cpp']
+env['DEBUG'] = 0
 
-TARGET = 'BasicBox2DApp'
-SOURCES += ['BasicBox2DApp.cpp']
-DEBUG = 0
+env = SConscript('../../../scons/SConscript', exports = 'env')
 
-SConscript('../../../../../scons/SConscript',
-	exports = ['TARGET', 'SOURCES', 'INCLUDES', 'DEBUG'])
+SConscript('../../../../../scons/SConscript', exports = 'env')
 
