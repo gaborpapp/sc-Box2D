@@ -13,3 +13,4 @@
 #include "b2cinder/Conversions.h"
 #include "b2cinder/PhysicsElement.h"
 #include "b2cinder/BoxElement.h"
+#include "b2cinder/TexturedElement.h"

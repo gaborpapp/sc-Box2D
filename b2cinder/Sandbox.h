@@ -51,6 +51,7 @@ namespace cinder{
 			// will be used a user-data for a b2Body
 			// will be notified on removal of body
 			void addElement( PhysicsElement *b );
+			void destroyElement( PhysicsElement *b );
 			
 			// wrappers for some b2world functions
 			

@@ -248,6 +248,11 @@ void Sandbox::addElement( PhysicsElement *b )
 	b->setBody( mTempBody );
 }
 
+void Sandbox::destroyElement( PhysicsElement *b )
+{
+	mWorld->DestroyBody( b->getBody() );
+}
+
 void Sandbox::createBoundaries( Rectf screenBounds )
 {
 	// add our boundaries
